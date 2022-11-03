@@ -4,14 +4,14 @@
 }
 
 .container{
-    border: 2px solid red;
     height: 100vh;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple 
     Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background-color: #ffffb3;
 }
 #heading{
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 40px;
 }
 .parent-box{
@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 #imageBox{
     background-image: url(OmJha.jpg);

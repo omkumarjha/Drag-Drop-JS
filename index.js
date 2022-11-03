@@ -8,9 +8,10 @@ imageBox.addEventListener("dragstart",(event)=>{
     setTimeout(()=>{
         event.target.className = "hide"
     },0)
+    event.target.parentElement.style.backgroundColor = "white"
 })
 
-// Jaise hi draggable image ko chodenge to drag end wala event triggored ho jayega.
+// Jaise hi draggable image ko chodenge to drag end wala event triggored ho jayega. chahe hum draggable image ko element pe chore ya fir uske bahar ye still trigger ho jayega.
 imageBox.addEventListener("dragend",(event)=>{
     event.target.className = "imageBox" // Matlab jaise hi hum draggable image ko chodenge to uska border gayab ho jaana chahiye.
 })
@@ -23,17 +24,10 @@ for(let box of boxes){
         event.preventDefault()
     })
 
-    box.addEventListener("dragenter",()=>{
-        console.log("Drag enter detected..")
-    })
-
-    box.addEventListener("dragleave",()=>{
-        console.log("Drag leave detected..")
-    })
-
     // Yeh event tab trigger hota hai jab hum draggable image ko kisi element pe laake chorte hai.
     box.addEventListener("drop",(event)=>{
         event.target.append(imageBox)
+        event.target.style.backgroundColor = "#cbcbcb"
     })
 
 
