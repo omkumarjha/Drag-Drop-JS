@@ -32,4 +32,7 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+    width: 275px;
+    height: 275px;
 }
