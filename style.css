@@ -26,13 +26,26 @@
     height: 275px;
     margin: 0px 75px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #imageBox{
     background-image: url(OmJha.jpg);
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
-    width: 275px;
-    height: 275px;
+    width: 49%;
+    height: 60%;
+    background-position: center;
+}
+
+/* Jaise hi hum draggable image ko drag karenge to ye class add ho jayegi */
+.borderImage{
+    border: 2px solid red;
+}
+
+/* Jaise hi hum draggable image ko drag karke chodenge to wo image pehle jaha tha uske image ko hide karne ke liye yeh class use hogi. */
+.hide{
+    display: none;
 }
